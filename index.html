@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- css end ------------------------- -->
     <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script/script.js"></script>
     <!-- js end -------------------------- -->
     <!-- favicon -->
@@ -24,7 +29,7 @@
       <nav class="navbar" role="navigation" aria-label="primary nav">
         <div class="container navbar__container">
           <!-- logo start -->
-          <a href="#" class="logo"> Ahmad Raza </a>
+          <a href="#" class="logo user__name"> Ahmad Raza </a>
           <!-- logo end -->
 
           <ul class="navigation__list">
@@ -49,11 +54,196 @@
           <!-- menu btn end -->
         </div>
       </nav>
-      <div class="nav-overlay"></div>
+      <div class="nav-overlay" aria-label="mobile nav overlay"></div>
     </header>
     <!-- </div> -->
     <!-- </div> -->
 
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <article class="hero__text__container">
+            <header class="hero__header">
+              <h1 class="hero__heading">
+                Hi! I am <span class="user__name">Ahmad Raza</span>
+              </h1>
+              <h2 class="hero__heading hero__heading--sub">
+                I am a <span class="role"></span>
+              </h2>
+            </header>
+            <p class="hero__text">
+              I’m a software developer and here is my portfolio website. Here
+              you’ll learn about my journey as a software developer.
+            </p>
+            <footer class="link__container">
+              <a href="#" class="hero__btn btn cta__btn">Hire me</a>
+            </footer>
+          </article>
+
+          <figure class="hero__img__container">
+            <div class="absolute icons icon__dot">
+              <img src="./images/userAsset/dots.png" alt="icon__dot" />
+            </div>
+            <div class="absolute icons icon__cube">
+              <img src="./images/userAsset/cube.png" alt="icon__cube" />
+            </div>
+            <div class="absolute icons icon__circle">
+              <img src="./images/userAsset/circle.png" alt="icon__circle" />
+            </div>
+            <div class="absolute icons icon__zigzak">
+              <img src="./images/userAsset/zigzags.png" alt="icon__zigzak" />
+            </div>
+            <div class="absolute icons icon__plus">
+              <img src="./images/userAsset/plus.png" alt="icon__plus" />
+            </div>
+            <div class="user__img__container">
+              <img
+                src="./images/userAsset/Absolute_Reality_v16_A_man_whose_skin_is_torn_apart_and_he_is_0 (1).jpg"
+                class="user__img"
+                alt="user img"
+              />
+            </div>
+            <figcaption class="offscreen">
+              <span class="user__name"></span>'s Photo
+            </figcaption>
+          </figure>
+
+          <div class="faded__text user__select--none user__name">
+            Ahmad Raza
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <header class="project__header">
+          <h1 class="project__heading">Projects</h1>
+        </header>
+        <ul class="project__list">
+          <li class="project__card__container">
+            <article class="project__card">
+              <header>
+                <span class="project__number">01</span>
+                <ul class="tech__icons__list">
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/HTML.png"
+                        alt="HTML"
+                      />
+                      <figcaption class="offscreen">HTML</figcaption>
+                    </figure>
+                  </li>
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/CSS.png"
+                        alt="CSS"
+                      />
+                      <figcaption class="CSS">HTML</figcaption>
+                    </figure>
+                  </li>
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/Tailwind.png"
+                        alt="Tailwind"
+                      />
+                      <figcaption class="Tailwnd">HTML</figcaption>
+                    </figure>
+                  </li>
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/NodeJs.svg"
+                        alt="NodeJS"
+                      />
+                      <figcaption class="offscreen">NodeJS</figcaption>
+                    </figure>
+                  </li>
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/Express.png"
+                        alt="Express"
+                      />
+                      <figcaption class="offscreen">Express</figcaption>
+                    </figure>
+                  </li>
+
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/MongoDB.svg"
+                        alt="MongoDB"
+                      />
+                      <figcaption class="offscreen">MongoDB</figcaption>
+                    </figure>
+                  </li>
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/Redux.svg"
+                        alt="Redux"
+                      />
+                      <figcaption class="offscreen">Redux</figcaption>
+                    </figure>
+                  </li>
+
+                  <li class="tech__icon__container">
+                    <figure>
+                      <img
+                        class="tech__icon"
+                        src="./images/stack/Vercel.svg"
+                        alt="Vercel"
+                      />
+                      <figcaption class="offscreen">Vercel</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+                <h2>Tint & Orange</h2>
+                <p class="project__subheading">
+                  ts is a car modification copany which provide you sheets to
+                  protect your car from scratch
+                </p>
+              </header>
+              <footer class="project__btn__container">
+                <a href="" class="cta__btn">Read More</a>
+                <a href="" class="github__icon">
+                  <img src="./images/stack/Github.svg" alt="github__icon" />
+                </a>
+                <a href="" class="link__icon">
+                  <img
+                    src="./images/stack/link-hyperlink-color-icon.svg"
+                    alt="link__icon"
+                  />
+                </a>
+              </footer>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Full Stack Developer",
+          "Web Developer",
+          "UI-UX Designer",
+          "Backend Developer",
+          "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
   </body>
 </html>

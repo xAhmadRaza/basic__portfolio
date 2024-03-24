@@ -1,0 +1,136 @@
+/* 
+--01 TYPOGRAPHY SYSTEM
+10 /12 / 14 / 16 / 18 / 20 /24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 /  98
+
+
+ - Spacing (px) 
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+/*
+===================================
+|| HERO                           |
+===================================
+*/
+.hero {
+  position: relative;
+}
+.hero__container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;
+  height: 100dvh; */
+  gap: 8rem;
+  margin-block: 10rem 6.5rem;
+  padding-inline: 1rem;
+  padding-block-end: 8rem;
+}
+.hero__text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.hero__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero__heading {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #343d68;
+}
+.hero__heading--sub {
+  font-size: 4.5rem;
+  line-height: 45px;
+  /* font-weight: 300; */
+}
+
+.hero__heading .user__name {
+  font-size: 1.2em;
+  letter-spacing: var(--LETTER-SPACING-PRIMARY);
+}
+.role {
+  color: #4e45d5;
+  font-weight: 600;
+}
+
+.hero__text {
+  font-size: 1.6rem;
+  margin-block-start: 1rem;
+  max-width: 70%;
+  font-weight: 500;
+}
+.faded__text {
+  font-size: 7rem;
+  font-weight: bold;
+
+  color: var(--CLR-GRAY-15);
+  transition: var(--TRANSITION-PRIMARY);
+
+  position: absolute;
+  bottom: -16%;
+  right: 7%;
+}
+
+.hero__img__container {
+  position: relative;
+}
+.icons {
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+}
+.icon__dot {
+  bottom: 0;
+  right: 0;
+  animation: dotsAnimation 5s ease-in-out infinite;
+}
+.icon__cube {
+  top: -1.58rem;
+  right: 1rem;
+  animation: cubeRotate 2s ease-in-out infinite;
+}
+.icon__circle {
+  left: 0;
+  bottom: 0;
+  animation: circleShake 5s linear infinite;
+}
+.icon__zigzak {
+  left: -0.6rem;
+  top: 3rem;
+  animation: zigzakAnimation 5s ease-in-out infinite;
+}
+.icon__plus {
+  top: -1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: plusShake 5s ease-in-out infinite;
+}
+.user__img__container {
+  padding: 4rem;
+  /* transition: var(--TRANSITION-PRIMARY); */
+  animation: userImageScale 5s linear infinite;
+
+  /* border: 1px solid; */
+  position: relative;
+
+  z-index: -1;
+}
+.user__img {
+  width: 100;
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  object-fit: cover;
+  max-height: 35rem;
+}
+/*
+===================================
+|| PROJECTS                       |
+===================================
+*/
+.projects {
+}
