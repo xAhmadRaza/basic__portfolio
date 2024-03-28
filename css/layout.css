@@ -138,7 +138,7 @@ body {
   max-width: min(90%, 130rem);
   margin-inline: auto;
 }
-.section__title {
+.section__heading {
   text-transform: capitalize;
   background-image: linear-gradient(
     var(--CLR-PRIMARY-6),
@@ -497,3 +497,8 @@ body {
 main {
   padding-block-start: 7rem;
 }
+/* 
+===================================
+|| FOOTER                         |
+===================================
+*/

@@ -127,7 +127,7 @@
         <!-- start of project header -->
         <header class="projects__header">
           <!-- start of project heading -->
-          <h2 class="projects__title section__title">Projects</h2>
+          <h2 class="projects__heading section__heading">Projects</h2>
           <!-- end of project heading -->
         </header>
         <ul class="projects__list container">
@@ -567,11 +567,12 @@
             <!-- start of skills header -->
             <header class="skills__header">
               <!-- start of skills heading -->
-              <h2 class="skills__title">
-                <span class="section__title"
-                  ><span class="about__title__first__letter">M</span>e and</span
+              <h2 class="skills__heading">
+                <span class="section__heading"
+                  ><span class="about__heading__first__letter">M</span>e
+                  and</span
                 >
-                <span class="section__title">My Tech Stack</span>
+                <span class="section__heading">My Tech Stack</span>
               </h2>
               <!-- end of skills heading -->
             </header>
@@ -806,7 +807,71 @@
         </div>
       </section>
       <!-- end of skills project -->
-      <section class="contact"></section>
+      <!-- start of contact  -->
+      <section class="contact">
+        <!-- start of contact container -->
+        <article class="contact__container container">
+          <!-- start of contact header  -->
+          <header class="contact__header">
+            <!-- start of heading -->
+            <h2 class="contact__heading section__heading">Contact me</h2>
+            <!-- end of heading -->
+            <!-- start of subtitle -->
+            <p class="contact__sub-heading">
+              Questions, Thoughts, Or Just Want To Say Hello?
+            </p>
+            <!-- end of subtitle -->
+          </header>
+          <!-- start of contact header  -->
+          <form class="contact__form">
+            <article class="form__group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                class="form__control"
+              />
+              <label class="form__label" for="name">Name</label>
+            </article>
+            <article class="form__group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="form__control"
+              />
+              <label class="form__label" for="email">Email</label>
+            </article>
+            <article class="form__group">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                class="form__control"
+              />
+              <label class="form__label" for="subject">Subject</label>
+            </article>
+            <article class="form__group">
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Message"
+                class="form__control"
+              ></textarea>
+              <label class="form__label" for="message">Message</label>
+            </article>
+            <button class="contact__btn cta__btn" type="submit">
+              Submit <i class="fa-solid fa-paper-plane form__submit__icon"></i>
+            </button>
+          </form>
+        </article>
+        <!-- start of contact container -->
+      </section>
+      <!-- end of contact  -->
     </main>
 
     <script>
