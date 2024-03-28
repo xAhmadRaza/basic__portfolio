@@ -100,6 +100,7 @@ img,
 video,
 audio {
   max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -421,10 +422,10 @@ body {
 .navigation__icon::after {
   bottom: 25%;
 }
-:not(.nav__open .navigation__icon):hover::before {
+.header:not(.nav__open .navigation__icon):hover::before {
   top: 22%;
 }
-:not(.nav__open .navigation__icon):hover::after {
+.header:not(.nav__open .navigation__icon):hover::after {
   bottom: 22%;
 }
 

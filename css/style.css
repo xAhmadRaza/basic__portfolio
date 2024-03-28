@@ -127,10 +127,236 @@
   object-fit: cover;
   max-height: 35rem;
 }
+.hero .user__name {
+  line-height: 1.2;
+}
 /*
 ===================================
 || PROJECTS                       |
 ===================================
 */
 .projects {
+  background-color: var(--CLR-GRAY-20);
+  padding-block-start: 8rem;
+}
+
+.projects__heading {
+  font-size: 7.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    var(--CLR-PRIMARY-6),
+    var(--CLR-PRIMARY-2) 70% 100%
+  );
+  color: transparent;
+
+  background-clip: text;
+  --webkit-background-clip: text;
+  line-height: 1.2;
+  margin-bottom: 1.2em;
+}
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+  gap: 18rem;
+}
+.project__container {
+  /* padding: 8rem; */
+  /* overflow: hidden; */
+}
+.project__item {
+  width: 80%;
+  height: 550px;
+  /* padding-block: 12em; */
+
+  box-shadow: 0 0 40px #1f1f1f;
+  /* background-image: linear-gradient(#1f1f1f9a, #1f1f1f9a),
+    url("../images/projects/Project1.png"); */
+  background-image: url("../images/projects/Project1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.project__container:nth-child(2) .project__item {
+  background-image: url("../images/projects/Project2.png");
+}
+.project__container:nth-child(3) .project__item {
+  background-image: url("../images/projects/Project3.png");
+}
+.project__container:nth-child(4) .project__item {
+  background-image: url("../images/projects/Project4.png");
+}
+.project__container:nth-child(even) .project__item {
+  margin-inline-start: 20%;
+}
+.project__item::after,
+.project__item::before {
+  content: "";
+  position: absolute;
+}
+
+/* why create such a complex thing ustaad when we could have done it in one line check like 174 // .project__item */
+.project__item::after {
+  inset: 0;
+  background-color: #1f1f1f9a;
+  z-index: 0;
+}
+.project__item::before {
+  inset: 0;
+
+  /* background-image: linear-gradient(
+    220deg,
+    transparent 0% 50%,
+    red 50% 65%,
+    blue 75% 85%,
+    green 95% 100%
+  ); */
+  background-image: linear-gradient(
+    220deg,
+    transparent 0% 50%,
+    #343d68a5 50% 65%,
+    #343d6899 75% 85%,
+    #343d68 95% 100%
+  );
+  background-size: 400%;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  background-position: right;
+  transition: var(--TRANSITION-PRIMARY);
+
+  /* background-image: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  transform-origin: left;
+  transform: scaleX(0);
+  */
+  z-index: 1;
+}
+.project__item:hover::before {
+  background-position: left;
+  /* background-position: right; */
+  /* transform: scaleX(1); */
+}
+.project__container:nth-child(even) .project__item::before {
+  background-image: linear-gradient(
+    145deg,
+    transparent 0% 50%,
+    #343d68a5 50% 65%,
+    #343d6899 75% 85%,
+    #343d68 95% 100%
+  );
+  background-position: left;
+}
+.project__container:nth-child(even) .project__item:hover::before {
+  background-position: right;
+}
+.project__content__container {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.project__header,
+.project__footer {
+  color: var(--CLR-WHITE);
+  max-width: 50rem;
+  width: 100%;
+  margin-inline: 8rem;
+  transition: var(--TRANSITION-PRIMARY);
+}
+.project__container:nth-child(odd) .project__item:hover .project__header,
+.project__container:nth-child(odd) .project__item:hover .project__footer {
+  margin-inline-start: 11rem;
+}
+.project__container:nth-child(even) .project__item:hover .project__header,
+.project__container:nth-child(even) .project__item:hover .project__footer {
+  margin-inline-end: 11rem;
+}
+.project__container:nth-child(even) .project__content__container {
+  align-items: end;
+}
+
+.project__number {
+  position: absolute;
+  font-size: 20rem;
+  font-weight: 600;
+  color: var(--CLR-PRIMARY-7);
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  top: 30%;
+  /* right: calc(-1em - 5rem); */
+  transform: scale(0.2);
+  right: calc(-1em + 12rem);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  transition: var(--TRANSITION-PRIMARY);
+}
+.project__container:nth-child(even) .project__number {
+  right: auto;
+  left: calc(-1em + 12rem);
+}
+.project__item:hover .project__number {
+  opacity: 1;
+  top: -10%;
+  transform: scale(1);
+  pointer-events: all;
+  visibility: visible;
+  right: calc(-1em - 8rem);
+}
+.project__container:nth-child(even) .project__item:hover .project__number {
+  right: auto;
+  left: calc(-1em - 8rem);
+}
+
+.tech__icons__list {
+  display: flex;
+  max-width: 92%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+/* .project__container:nth-child(even) .tech__icons__list {
+  max-width: 85%;
+} */
+.tech__icon {
+  height: 4.6rem;
+  width: auto;
+}
+
+.project__heading {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-block-start: 1.2rem;
+  margin-block-end: 1.4rem;
+}
+.project__intro__text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-style: italic;
+  margin-block-end: 2.3rem;
+}
+.project__footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.project__cta__btn {
+  border: none;
+}
+.link__icon:any-link,
+.github__icon:any-link {
+  font-size: 3.6rem;
+  color: var(--CLR-WHITE);
+  transition: var(--TRANSITION-PRIMARY);
+}
+.link__icon:hover,
+.link__icon:active,
+.link__icon:focus,
+.github__icon:hover,
+.github__icon:active,
+.github__icon:focus {
+  color: var(--CLR-PRIMARY-6);
 }
