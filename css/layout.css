@@ -120,6 +120,10 @@ body {
 ===================================
 */
 
+::selection {
+  background-color: var(--CLR-PRIMARY-11);
+  color: var(--CLR-PRIMARY-1);
+}
 .offscreen {
   position: absolute;
   left: -10000px;
@@ -133,6 +137,20 @@ body {
 .container {
   max-width: min(90%, 130rem);
   margin-inline: auto;
+}
+.section__title {
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    var(--CLR-PRIMARY-6),
+    var(--CLR-PRIMARY-2) 70% 100%
+  );
+  color: transparent;
+
+  background-clip: text;
+  --webkit-background-clip: text;
+  filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
+  line-height: 1.2;
+  margin-bottom: 1.2em;
 }
 .cta__btn {
   display: inline-block;
@@ -233,6 +251,23 @@ body {
   100% {
     transform: scale(1);
     filter: grayscale(0);
+  }
+}
+
+@keyframes blob-morph {
+  25% {
+    transform: translate(-30%, -65%) scale(0.8);
+    border-radius: 33% 50% 50% 50% / 37% 24% 50% 68%;
+  }
+
+  50% {
+    border-radius: 27% 40% 56% 70% / 63% 80% 50% 62%;
+    transform: translate(-40%, -80%);
+  }
+
+  75% {
+    border-radius: 50% 30% 33% 28% / 56% 43% 50% 29%;
+    transform: translate(-70%, -35%) scale(1.1);
   }
 }
 
