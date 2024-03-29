@@ -32,6 +32,7 @@
   /* --FF-SECONDARY: */
   --FF-DANCING-SCRIPT: "Dancing Script", cursive;
   --FS-GLOBAL: clamp(50%, 1.8vw, 62.5%);
+  --FS-GLOBAL--FALLBACK: clamp(50%, 1.8vw, 62.5%);
   /* LETTER SPACING */
   --LETTER-SPACING-PRIMARY: 0.25rem;
   /* --LETTER-SPACING-PRIMARY: 0.4rem; */
@@ -107,6 +108,7 @@ audio {
 
 html {
   font-size: var(--FS-GLOBAL);
+  font-size: var(--FS-GLOBAL--FALLBACK);
   scroll-behavior: smooth;
 }
 body {
@@ -174,6 +176,7 @@ body {
   );
   background-size: 350%;
   font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.6rem, 2.5dvw, 1.8rem);
   font-weight: 500;
   border: 3px solid var(--CLR-PRIMARY-6);
   color: var(--CLR-WHITE);
