@@ -2,7 +2,7 @@
 
 ## Learning
 
-1. How to mask images using url / using after pseudo-element
+1. How to mask images using linear-gradient before the url of the img / using after pseudo-element
 2. How to not animation your site apparently using all kinds of styles to animate your site slow it downs therefore, we should always use
    1. transform
    2. opacity
