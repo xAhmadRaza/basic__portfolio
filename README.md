@@ -1,4 +1,4 @@
-# basic\_\_portfolio
+view project at:
 
 ## Learning
 
@@ -9,3 +9,4 @@
 3. creating cool colors using background-clip
 4. how to disable user to select text by applying user-select:none
 5. how to style selected text
+6. using Autoprefixed to add vendor prefixes automatically
