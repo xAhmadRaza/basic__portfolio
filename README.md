@@ -1,4 +1,4 @@
-view project at:
+view project at:https://xahmadraza.github.io/basic__portfolio/index.html
 
 ## Learning
 
