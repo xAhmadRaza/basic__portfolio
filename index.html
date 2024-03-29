@@ -799,9 +799,7 @@
             <!-- end of skills stack img item -->
           </figure>
 
-          <div
-            class="skills__faded__text faded__text user__select--none user__name"
-          >
+          <div class="skills__faded__text faded__text user__select--none">
             Skills
           </div>
         </div>
@@ -824,6 +822,7 @@
           </header>
           <!-- start of contact header  -->
           <form class="contact__form">
+            <!-- start of name field container -->
             <article class="form__group">
               <input
                 type="text"
@@ -834,6 +833,8 @@
               />
               <label class="form__label" for="name">Name</label>
             </article>
+            <!-- end of name field container -->
+            <!-- start of email field container -->
             <article class="form__group">
               <input
                 type="email"
@@ -844,6 +845,8 @@
               />
               <label class="form__label" for="email">Email</label>
             </article>
+            <!-- end of email field container -->
+            <!-- start of subject field container -->
             <article class="form__group">
               <input
                 type="text"
@@ -854,6 +857,8 @@
               />
               <label class="form__label" for="subject">Subject</label>
             </article>
+            <!-- end of subject field container -->
+            <!-- start of message field container -->
             <article class="form__group">
               <textarea
                 name="message"
@@ -864,9 +869,12 @@
               ></textarea>
               <label class="form__label" for="message">Message</label>
             </article>
+            <!-- end of message field container -->
+            <!-- start of submit btn -->
             <button class="contact__btn cta__btn" type="submit">
               Submit <i class="fa-solid fa-paper-plane form__submit__icon"></i>
             </button>
+            <!-- end of submit btn -->
           </form>
         </article>
         <!-- start of contact container -->
@@ -874,6 +882,95 @@
       <!-- end of contact  -->
     </main>
 
+    <!-- start of footer -->
+    <footer class="footer">
+      <!-- start of footer container -->
+      <nav
+        class="footer__container container"
+        role="navigation"
+        aria-label="footer navigation"
+      >
+        <!-- start of footer navigation link -->
+        <ul class="footer__navbar">
+          <!-- start of nav link -->
+          <li class="footer__nav__item">
+            <a href="#" class="footer__link">Projects</a>
+          </li>
+          <!-- end of nav link -->
+          <!-- start of nav link -->
+          <li class="footer__nav__item">
+            <a href="#" class="footer__link">skills</a>
+          </li>
+          <!-- end of nav link -->
+          <!-- start of nav link -->
+          <li class="footer__nav__item">
+            <a href="#" class="footer__link">contact me</a>
+          </li>
+          <!-- end of nav link -->
+        </ul>
+        <!-- end nav links -->
+        <!-- start of footer social links -->
+        <ul class="footer__nav__social">
+          <!-- start of footer__social -->
+          <li class="footer__nav__social__item">
+            <a href="#" class="footer__social__link"
+              ><i class="fa-brands fa-linkedin icon"></i
+            ></a>
+          </li>
+          <!-- end of footer__social -->
+          <!-- start of footer__social -->
+          <li class="footer__nav__social__item">
+            <a href="#" class="footer__social__link"
+              ><i class="fa-brands fa-github icon"></i
+            ></a>
+          </li>
+          <!-- end of footer__social -->
+          <!-- start of footer__social -->
+          <li class="footer__nav__social__item">
+            <a href="#" class="footer__social__link"
+              ><i class="fa-brands fa-twitter icon"></i
+            ></a>
+          </li>
+          <!-- end of footer__social -->
+          <!-- start of footer__social -->
+          <li class="footer__nav__social__item">
+            <a href="#" class="footer__social__link"
+              ><i class="fa-brands fa-instagram icon"></i
+            ></a>
+          </li>
+          <!-- end of footer__social -->
+          <!-- start of footer__social -->
+          <li class="footer__nav__social__item">
+            <a href="#" class="footer__social__link"
+              ><i class="fa-regular fa-envelope icon"></i
+            ></a>
+          </li>
+          <!-- end of footer__social -->
+        </ul>
+        <!-- end of footer social links -->
+        <!-- start of copyright text -->
+        <div>
+          <small class="copyright__text"
+            >&copy; copyright
+            <time datetime="2024" id="copyright__date">2024</time>
+            <!-- by <span class="user__name">Ahmad Raza</span>  -->
+            all rights reserved</small
+          >
+        </div>
+        <!-- end of copyright text -->
+
+        <!-- start of faded text -->
+        <div
+          class="skills__faded__text faded__text user__select--none user__name"
+        >
+          Ahmad Raza
+        </div>
+        <!-- end of faded text -->
+      </nav>
+      <!-- end of footer container -->
+    </footer>
+    <!-- end of footer -->
+    <!--  -->
     <script>
       var typeData = new Typed(".role", {
         strings: [

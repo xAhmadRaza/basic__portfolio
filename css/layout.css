@@ -50,6 +50,7 @@
   --CLR-PRIMARY-9: hsl(0, 84%, 80%);
   --CLR-PRIMARY-10: hsl(0, 83%, 86%);
   --CLR-PRIMARY-11: hsl(0, 84%, 88%);
+  --CLR-PRIMARY-12: hsl(0, 40%, 88%);
   /* darkest gray is 1 */
 
   --CLR-GRAY-1: hsl(0, 0%, 9%);
@@ -182,7 +183,10 @@ body {
   font-family: var(--FF-DANCING-SCRIPT);
   font-weight: 700;
 }
-
+.faded__text {
+  font-family: var(--FF-DANCING-SCRIPT);
+  font-weight: 700;
+}
 .absolute {
   position: absolute;
 }
@@ -502,3 +506,63 @@ main {
 || FOOTER                         |
 ===================================
 */
+.footer {
+  background-color: var(--CLR-PRIMARY-1);
+  color: var(--CLR-PRIMARY-12);
+}
+.footer__container {
+  padding-block: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  position: relative;
+}
+
+.footer__navbar,
+.footer__nav__social {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 2.5rem;
+}
+.footer__link:any-link {
+  font-size: 2.2rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: inherit;
+  transition: var(--TRANSITION-PRIMARY);
+}
+
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus {
+  color: var(--CLR-PRIMARY-8);
+}
+.footer__social__link,
+.footer__social__link:any-link {
+  color: inherit;
+  display: block;
+  font-size: 3rem;
+  transition: var(--TRANSITION-PRIMARY);
+}
+
+.footer__social__link:hover,
+.footer__social__link:active,
+.footer__social__link:focus {
+  color: var(--CLR-PRIMARY-8);
+  transform: scale(1.5);
+}
+.copyright__text {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.copyright__text .user__name {
+  font-size: 2.3rem;
+}
+.footer__container .faded__text {
+  bottom: 8px;
+  left: 0;
+  line-height: 1;
+}
